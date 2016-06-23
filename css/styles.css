@@ -1,0 +1,92 @@
+.contact-form input {
+  background: black;
+  color: white;
+  border-color: gray;
+}
+
+.contact-form textarea {
+  background: black;
+  color: white;
+  border-color: gray;
+}
+
+.contact-form .btn {
+  background: transparent;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: black;
+  color: black;
+}
+.contact-form .heading {
+  color: black;
+  margin-bottom: 50px;
+}
+
+.contact-form .heading:after {
+    border-top: 3px solid black;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    content: "";
+}
+
+.contact-form .info p {
+  color: black;
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.contact-form .social-buttons {
+  display: inline;
+}
+
+.contact-form .social-buttons:before {
+    border-bottom: 3px solid black;
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+    content: "";
+}
+
+ .hover-menu {
+  text-align: center;
+  /*background-image: url(../images/landing/belmonte.png);*/
+  /*background-size: contain;*/
+  background-position: center;
+}
+
+.hover-menu ul {
+  list-style: none;
+} 
+
+.hover-menu ul li {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.hover-menu ul li a {
+  color: white;
+  font-size: 4.3em;
+  font-weight: 100;
+}
+
+.hover-menu ul li a:hover {
+  border-bottom: white 3px solid;
+}
+
+.como-comprar {
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+
+.como-comprar .titulo {
+  margin-top: 45%;
+  margin-bottom: 3%; 
+}
+
+.como-comprar .btn{
+  font-size: 2.7em;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+  background-color: rgba(230, 230, 230, 0.7);
+}
