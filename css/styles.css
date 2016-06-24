@@ -81,7 +81,7 @@
 }
 
 .como-comprar .titulo {
-  margin-top: 45%;
+  margin-top: 35%;
   margin-bottom: 3%; 
 }
 
@@ -90,3 +90,15 @@
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
   background-color: rgba(230, 230, 230, 0.7);
 }
+
+/*.portafolio {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.portafolio .container {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}*/
