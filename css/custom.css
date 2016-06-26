@@ -1,4 +1,21 @@
+/*proyectos*/
 
+.back-sect1
+{
+  z-index: -99;
+  position: absolute;
+  display: none;
+  left: 0;
+  top:0;
+}
+
+.back-sect1-active
+{
+  display:block;
+
+}
+
+/*final proyectos*/
 
 
 
@@ -355,35 +372,3 @@
   width: 100%;
   z-index: -2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
