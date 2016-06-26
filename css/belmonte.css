@@ -1,0 +1,38 @@
+.no-border {
+  border: none !important;
+}
+
+/*.container {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}*/
+
+.caption {
+  font-size: 1.6em;
+  color: black;
+}
+
+.social-icons-caption {
+  font-size:  1.8em;
+}
+.social-icons-caption ul li{
+  display: inline-block;
+}
+
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+  padding-top: 6px;
+}
+
+section {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
