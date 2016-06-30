@@ -11,17 +11,17 @@
 }*/
 
 .caption {
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: black;
+  margin-bottom: 15px;
 }
 
 .social-icons-caption {
-  font-size:  1.8em;
+  font-size:  1.6em;
 }
 .social-icons-caption ul li{
   display: inline-block;
 }
-
 
 ul {
   padding-left: 0;
@@ -29,10 +29,23 @@ ul {
 
 ul li {
   list-style: none;
-  padding-top: 6px;
 }
 
 section {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
+  margin-bottom: 10%;
+}
+
+.space {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.black-button {
+  background-color: black;
+}
+
+.black-button i {
+  color: white;
 }
