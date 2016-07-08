@@ -55,7 +55,7 @@
 
 </head>
 
-<body class="wide wide side-panel-static">
+<body>
 	<!-- SITE LOADER -->
 	<div class="loader-wrapper vertical-align">
 		<div class="loader">
@@ -67,29 +67,75 @@
 
 	<!-- WRAPPER -->
 	<div class="wrapper">
-
-		<!-- HEADER -->
-		<header id="header" class="">
+		<header id="header" class="header-dark">
 			<div id="header-wrap">
 				<div class="container">
 
-					<!--LOGO-->
 					<div id="logo">
-						<a href="index.html" class="logo" data-dark-logo="images/landing/PROALogo-dark2.png">
-							<img src="images/landing/PROALogo-dark2.png" alt="PROA Logo">
+						<a href="index.html" class="logo" data-dark-logo="images/landing/logonav.png">
+						<img src="images/landing/logonav.png" alt="PROA Logo">
 						</a>
 					</div>
-					<!--END: LOGO-->
 
-					<!--MOBILE MENU -->
+					<div class="nav-main-menu-responsive">
+						<button type="button" class="lines-button x">
+							<span class="lines"></span>
+						</button>
+					</div>
+
+					<div class="navigation-wrap">
+						<nav id="mainMenu" class="style-1 main-menu mega-menu">
+							<ul class="main-menu nav nav-pills">
+								<li class="dropdown"> <a href="#slider" class="nav-to"><i class="fa fa-home"></i></a> </li>
+								<li class="dropdown"><a href="#section1" class="nav-to">Proyectos</a></li>				
+								<li class="dropdown"><a href="#section2" class="nav-to">Portafolio</a></li>
+								<li class="dropdown"><a href="#section4" class="nav-to">Noticias</a></li>
+								<li class="dropdown"><a href="#section5" class="nav-to">Contacto</a></li>
+								<li class="dropdown"><a href="#section6" class="nav-to">Como comprar</a></li>
+								<li class="dropdown"><a href="nosotros.html" class="nav-to">Nosotros</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<!-- HEADER -->
+		<!-- <header id="header" class="header-dark">
+			<div id="header-wrap">
+				<div class="container">
+		
+					LOGO
+					<div id="logo">
+						<a href="index.html" class="logo" data-dark-logo="images/landing/logonav.png">
+							<img src="images/landing/PROALogo-dark2.png" alt="PROA Logo">
+							<img src="images/landing/logonav.png" alt="PROA Logo">
+						</a>
+					</div>
+					END: LOGO
+		
+					MOBILE MENU
 					<div class="nav-main-menu-responsive">
 						<button class="lines-button x">
 							<span class="lines"></span>
 						</button>
 					</div>
-					<!--END: MOBILE MENU -->
+					END: MOBILE MENU
+		
+					<nav id="mainMenu" class="main-menu mega-menu">
+						<ul class="main-menu nav nav-pills">
+							<li class="dropdown"><a href="#section-home" class="nav-to"><i class="fa fa-home"></i></a> </li>
+							<li class="dropdown"> <a href="#section-about" class="nav-to">About</a> </li>
+							<li class="dropdown"> <a href="#section-portfolio" class="nav-to">Portfolio</a> </li>
+							<li class="dropdown"> <a href="#section-services" class="nav-to">Services</a> </li>
+							<li class="dropdown"> <a href="#section-blog" class="nav-to">Blog</a> </li>
+							<li class="dropdown"> <a href="#footer" class="nav-to">Contact</a> </li>
 
-					<!--END: SIDE PANEL -->
+						</ul>
+					</nav>
+		
+					END: SIDE PANEL
 					<div id="side-panel-button" class="side-panel-button">
 						<button class="lines-button x" type="button" >
 							<span class="lines"></span>
@@ -97,16 +143,16 @@
 					</div>
 					<div id="side-panel" class="side-panel-dark">
 						<div class="side-panel-wrap">
-
-							<!--LOGO-->
+					
+							LOGO
 							<div id="panel-logo" class="m-b-80">
 								<a href="index.html" class="logo" data-dark-logo="images/landing/PROALogo2.png">
 									<img src="images/landing/PROALogo2.png" alt="PROA Logo" class="img-responsive">
 								</a>
 							</div>
-							<!--END: LOGO-->
-
-							<!--NAVIGATION-->
+							END: LOGO
+					
+							NAVIGATION
 							<div class="navigation-wrap navbar-collapse collapse main-menu-collapse">
 								<div class="container">
 									<nav id="mainMenu" class="main-menu mega-menu">
@@ -115,13 +161,13 @@
 											</li>
 											<li class="dropdown"><a href="#section1" class="nav-to">Proyectos</a>
 											</li>
-											<!-- <li class="dropdown"> <a href="#">Projects <i class="fa fa-angle-down"></i> </a>
+											<li class="dropdown"> <a href="#">Projects <i class="fa fa-angle-down"></i> </a>
 												<ul class="dropdown-menu">
 													<li><a href="#section2"  class="nav-to">Project first</a> </li>
 													<li><a href="#section2-2"  class="nav-to">Project second</a> </li>
 													<li><a href="#section2-1"  class="nav-to">Project third</a> </li>
 												</ul>
-											</li> -->
+											</li>
 											<li class="dropdown"><a href="#section2" class="nav-to">Portafolio</a>
 											</li>
 											<li class="dropdown"><a href="#section4" class="nav-to">Noticias</a>
@@ -134,10 +180,10 @@
 									</nav>
 								</div>
 							</div>
-							<!--END: NAVIGATION-->
-
-							<!--WIDGET SOCIAL ICONS -->
-							<!-- <div class="panel-widget">
+							END: NAVIGATION
+					
+							WIDGET SOCIAL ICONS
+							<div class="panel-widget">
 								<div class="social-icons social-icons-dark">
 									<ul>
 										<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -148,11 +194,11 @@
 										<li class="social-youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
 									</ul>
 								</div>
-							</div> -->
-							<!--END: WIDGET SOCIAL ICONS -->
-
-							<!--WIDGET COPYRIGHT -->
-
+							</div>
+							END: WIDGET SOCIAL ICONS
+					
+							WIDGET COPYRIGHT
+					
 							<div class="panel-widget side-panel-footer">
 								<p>
 									<ul>
@@ -168,17 +214,16 @@
 									</ul>
 								</p>
 							</div>
-							<!--END: WIDGET COPYRIGHT -->
-
+							END: WIDGET COPYRIGHT
+					
 						</div>
 					</div>
-					<!--END: SIDE PANEL -->
-
+					END: SIDE PANEL
 				</div>
 			</div>
 		</header>
-		<!-- END: HEADER -->
-
+		END: HEADER
+		 -->
 		<!-- OWL SLIDER -->
 		<section id="slider">
 			<div id="slider-carousel" class="fullscreen">
@@ -217,36 +262,41 @@
 			</div>
 		</section>
 
-		<hr class="gray-space">
+		<!-- <hr class="gray-space"> -->
 
 		<section id="section4" class="background-grey">
 			{% include last_posts.html %}
 		</section>
 
-		<hr class="gray-space">
+		<!-- <hr class="gray-space"> -->
 
 		<section id="section1" class="hover-menu">
 
-			<img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/proyectos_fondo.jpg"/>
+			<!-- <img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/proyectos_fondo.jpg"/> -->
+			<img id="fondo" class="back-sect1-active back-sect1 img-responsive" src="images/landing/belmonte.jpg"/>
 			<img id="belmonte" class="back-sect1 img-responsive" src="images/landing/belmonte.jpg"/>
 			<img id="lindaraja" class="back-sect1 img-responsive" src="images/landing/lindaraja.jpg"/>
-			<img id="castilla" class="back-sect1 img-responsive" src="images/landing/castillanueva.jpg"/>
 			<img id="portafolio" class="back-sect1 img-responsive" src="images/landing/portafolio.jpg"/>
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 shadow">
 						<ul>
 							<!-- 	<li id="belmonte"><a href="belmonte.html">BELMONTE PLAZA</a></li>
 								<li id="lindaraja"><a href="">LINDARAJA</a></li>
 								<li id="castilla"><a href="">CASTILLA NUEVA</a></li>
 								<li id="portafolio"><a href="">PORTAFOLIO</a></li>
 							</ul>		 -->
-							<li class="link-project" data-img="belmonte"><a href="belmonte.html">BELMONTE PLAZA</a></li>
-							<li class="link-project" data-img="lindaraja"><a href="lindaraja.html">LINDARAJA</a></li>
-							<li class="link-project" data-img="castilla"><a href="">CASTILLA NUEVA</a></li>
-							<li class="link-project" data-img="portafolio"><a href="">PORTAFOLIO</a></li>
-							</ul>
+							<li>
+								<a class="text-large-light link-project" data-img="belmonte" href="belmonte.html">BELMONTE PLAZA</a>
+							</li>
+							<li>
+								<a class="text-large-light link-project" data-img="lindaraja" href="lindaraja.html">LINDARAJA</a>
+								</li>
+							<li>
+								<a class="text-large-light link-project" data-img="portafolio" href="">PORTAFOLIO</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

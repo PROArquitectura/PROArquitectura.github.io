@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>POLO | The Multi-Purpose HTML5 Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{{site.baseurl}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link href="{{site.baseurl}}/vendor/animateit/animate.min.css" rel="stylesheet">
+
+  <!-- Template base -->
+
+  <link href="{{site.baseurl}}/css/theme-base.css" rel="stylesheet">
+
+  <!-- Template elements -->
+  <link href="{{site.baseurl}}/css/theme-elements.css" rel="stylesheet"> 
+    
+    
+  <!-- Responsive classes -->
+  <link href="{{site.baseurl}}/css/responsive.css" rel="stylesheet">
+
+  <link href="{{site.baseurl}}/vendor/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->    
+
+  <!-- Template color -->
+  <!-- <link href="{{site.baseurl}}/css/color-variations/blue.css" rel="stylesheet" type="text/css" media="screen" title="blue"> -->
+
+  <!-- LOAD GOOGLE FONTS -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+
+  <!-- CSS CUSTOM STYLE -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/custom.css" media="screen" /> -->
+
+    <!--VENDOR SCRIPT-->
+
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/proyectos.css" media="screen" />
+    
+
+    <script src="{{site.baseurl}}/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script src="{{site.baseurl}}/vendor/plugins-compressed.js"></script>
+
+</head>
+
+<body class="wide">
+  
+
+  <!-- WRAPPER -->
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header id="header" class="header-transparent">
+      <div id="header-wrap">
+                <div class="container">
+
+                    <!--LOGO-->
+                    <div id="logo">
+                        <a href="index.html" class="logo" data-dark-logo="{{site.baseurl}}images/landing/PROALogo-dark2.png">
+                            <img src="{{site.baseurl}}/images/landing/PROALogo-dark2.png" alt="PROA Logo">
+                        </a>
+                    </div>
+                    <!--END: LOGO-->
+
+                    <!--MOBILE MENU -->
+                    <div class="nav-main-menu-responsive">
+                        <!--  <button class="lines-button x">
+                            <span class="lines"></span>
+                        </button>-->
+                        <button type="button" class="lines-button x">
+                            <span class="lines"></span>
+                        </button>
+
+                    </div>
+                    <!--END: MOBILE MENU -->
+
+                    <!--NAVIGATION MENU-->
+                    <div class="navigation-wrap">
+                        <nav id="mainMenu" class="style-1 main-menu slide-menu">
+                            <ul class="main-menu nav nav-pills">
+                                <li><a href="#section-home" class="nav-to">Home</a> </li>
+                                <li><a href="#section-blog" class="nav-to">Blog</a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--END: NAVIGATION-->
+
+                </div>
+            </div>
+    </header>
+    <!-- END: HEADER -->
+    
+<!-- PAGE TITLE -->
+<section id="page-title" class="center text-dark">
+  <div class="container">
+    <div class="page-title col-md-8">
+      <h2>{{page.title}}</h2>
+            <span>Work is easy when you have all tools around you!</span>
+        </div>
+        <div class="breadcrumb col-md-4">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i></a>
+                </li>
+                <li><a href="{{site.baseurl}}/blog">Home</a>
+                </li>
+                <li><a href="#">{{page.category}}</a>
+                </li>
+                <li class="active"><a href="#">{{page.title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- END: PAGE TITLE -->
+
+
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="post-content post-classic post-content-single col-md-9">
+                <div class="post-item">
+                    <div class="post-image">
+                        <a href="#">
+                            <img alt="" src="{{site.baseurl}}/images/Belmonte/3.jpg">
+                        </a>
+                    </div>
+                    <div class="post-content-details">
+                        <div class="post-title">
+                            <h2>Titulo</h2>
+                        </div>
+                        <div class="post-info">
+                            <span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
+                            <span class="post-category">in <a href="#">Productivity</a></span>
+                        </div>
+                        <div class="post-description">
+                           {{page.content}}
+                        </div>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-date">
+                            <span class="post-date-day">16</span>
+                            <span class="post-date-month">January</span>
+                            <span class="post-date-year">2015</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+            <div class="sidebar sidebar-modern col-md-3">
+
+                <!--widget tags -->
+                <div class="widget clearfix widget-tags">
+                    <h3 class="widget-title">Categorias</h3>
+                    <div class="tags">
+                        {% for category in site.categories %}
+                          <a href="{{site.baseurl}}/categories#{{category[0]}}">{{category[0]}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end: widget tags -->
+                <!--widget archive-->
+                <div class="widget clearfix widget-archive">
+                    <h3 class="widget-title">Archivo</h3>
+                    <ul class="list list-lines">
+                        {% for post in site.posts %}
+                          <li>
+                          {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+                            <ul>
+                          {% if currentyear != year %}
+                            <h4>{{ currentyear }}</h4>
+                            {% capture year %}{{currentyear}}{% endcapture %} 
+                          {% endif %}
+                              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            </ul>
+                          </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!--end: widget archive-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: SECTION -->
+
+</div>
+<!-- END: WRAPPER -->
+
+<!-- GO TOP BUTTON -->
+<a class="gototop gototop-button black-button" href="#"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="{{site.baseurl}}/js/theme-functions.js"></script>
+
+<!-- Custom js file -->
+<script src="{{site.baseurl}}/js/custom.js"></script>
+
+
+</body>
+</html>

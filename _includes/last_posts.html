@@ -22,10 +22,9 @@
           </div>
 
           <div class="post-description">
-            <p>{{post.description}}</p>
-
+            <p> {{ post.content | strip_html | truncatewords:20}}</p>
             <div class="post-info">
-              <a class="read-more" href="blog-post.html">leer mas<i class="fa fa-long-arrow-right"></i></a>
+              <a class="read-more" href="{{post.url}}">leer mas<i class="fa fa-long-arrow-right"></i></a>
             </div>
           </div>
         </div>

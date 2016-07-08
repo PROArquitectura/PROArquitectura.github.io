@@ -51,6 +51,7 @@
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
+    <script src="vendor/scrollmagic/ScrollMagic.min.js"></script>
 
 </head>
 
@@ -62,13 +63,13 @@
 
 		<!--HEADER-->
 		<header id="header" class="header-transparent">
-            <div id="header-wrap">
+            <div id="header-wrap" style="background-color: #FFFDDC">
                 <div class="container">
 
                     <!--LOGO-->
                     <div id="logo">
-                        <a href="index.html" class="logo" data-dark-logo="images/landing/PROALogo-dark2.png">
-                            <img src="images/landing/PROALogo-dark2.png" alt="PROA Logo">
+                        <a href="index.html" class="logo" data-dark-logo="images/landing/logonav.png">
+                            <img src="images/landing/logonav.png" alt="PROA Logo">
                         </a>
                     </div>
                     <!--END: LOGO-->
@@ -102,28 +103,33 @@
 			<!--END: HEADER-->
 
 		<section>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1"><img src="images/Belmonte/1.jpg" alt="" class="img-responsive"></div>
-				</div>
-			</div>
-		</section>
-				
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1"><img src="images/Belmonte/aqui_ahora.jpg" class="img-responsive" alt=""></div>
+					<div class="col-md-12 no-padding"><img src="images/Belmonte/1.jpg" alt="" class="img-responsive"></div>
 				</div>
 			</div>
 		</section>
 
+		<hr class="white-divider">
+						
 		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 no-padding"><img src="images/Belmonte/aqui_ahora.jpg" class="img-responsive" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<hr class="white-divider">
+		<hr class="gray-divider">
+
+		<section style="background-color: #f6f6f6">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-6">
 						<img src="images/Belmonte/3.jpg" alt="" class="img-responsive">
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<h1 class="text-medium">Belmonte Plaza</h1>
 						<hr>
 						<ul>
@@ -155,6 +161,9 @@
 			</div>
 		</section>
 
+		<hr class="gray-divider">
+		<hr class="white-divider">
+
 		<section>
 			<div class="container">
 				<div class="row">
@@ -165,7 +174,10 @@
 			</div>
 		</section>
 
-		<section>
+		<hr class="white-divider">
+		<hr class="gray-divider">
+
+		<section  style="background-color: #f6f6f6">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
@@ -174,9 +186,12 @@
 				</div>
 			</div>
 		</section>
+	
+		<hr class="gray-divider">
+		<hr class="white-divider">
 
 		<section>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<h1 class="text-medium">Apartamentos de 1, 2 y 3 alcobas, desde 60mts2 hasta 217mts2</h1>
@@ -198,42 +213,62 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="container">
+		<hr class="white-divider">
+		<hr class="gray-divider">
+
+		<section style="background-color: #f6f6f6">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-12">
 						<img src="images/Belmonte/9.jpg" alt="" class="img-responsive">
 						</div>
 				</div>
 			</div>
 		</section>
 
+		<hr class="gray-divider">
+		<hr class="white-divider">
+
 		<section>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-12">
 						<img src="images/Belmonte/clubhouse.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5 col-md-offset-1">
-						<img src="images/Belmonte/11.jpg" alt="" class="img-responsive">
+		<hr class="white-divider">
+		<hr class="gray-divider">
+
+		<section style="background-color: #f6f6f6">
+			<div class="container-fluid">
+				<div class="row gallery">
+					<div class="col-md-5 no-padding">
+						<div class="image-box effect erdi">
+							<img src="images/Belmonte/11.jpg" alt="" class="">
+							<div class="image-box-content"></div>
+						</div>
 					</div>
-					<div class="col-md-5">
-						<img src="images/Belmonte/12.jpg" alt="" class="img-responsive">
+					<div class="col-md-6 pull-right no-padding">
+						<div class="image-box effect erdi">
+							<img src="images/Belmonte/12.jpg" alt="" class="">
+							<div class="image-box-content"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<hr class="gray-divider">
+		<hr class="white-divider">
+
+
+<!-- 
 		<div class="seperator m-b-0"></div>
 		
-		<!-- FOOTER -->
+		FOOTER
 		<footer id="footer">
 			<div class="footer-content p-t-10">
 				<div class="container">
@@ -257,7 +292,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 		<!-- END: FOOTER -->
 
 	</div>
@@ -265,12 +300,15 @@
 
 	<!-- GO TOP BUTTON -->
 	<a class="gototop gototop-button black-button" href="#"><i class="fa fa-chevron-up"></i></a>
+	<a class="brochure-button black-button" href="#">Descargar brochure</a>
 
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme-functions.js"></script>
 
 	<!-- Custom js file -->
 	<script src="js/custom.js"></script>
+
+
 
 
 
