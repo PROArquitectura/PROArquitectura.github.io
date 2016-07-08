@@ -94,3 +94,7 @@ section {
 .image-box {
   max-height: 100%;
 }
+
+.cream-header {
+  background-color: #FFFDDC !important;
+}
