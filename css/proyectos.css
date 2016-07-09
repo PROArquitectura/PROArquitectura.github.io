@@ -134,3 +134,15 @@ section {
   color: #063B49 !important;
   font-size: 3.5em !important;
 }
+
+.image-box.effect.erdi:hover img {
+    opacity: 1 !important;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.image-box.effect.erdi:hover p {
+    opacity: 1 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
