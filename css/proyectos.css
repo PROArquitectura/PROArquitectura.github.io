@@ -70,16 +70,16 @@ section {
 
 .brochure-button {
   color: white;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 0px;
   bottom: 100px;
   position: fixed;
   right: 0;
+  bottom: 0;
   z-index: 199;
   padding: 8px 14px 9px
 }
 
 .brochure-button:hover {
-  right: 0;
   color: white;
 }
 
@@ -97,4 +97,40 @@ section {
 
 .cream-header {
   background-color: #FFFDDC !important;
+}
+
+.intro-text {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.intro-text strong {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.intro-title p {
+  color: #82624D;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.7em;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.intro-title-medium {
+  color: #D27742;
+  text-transform: uppercase;
+  font-size: 2.7em;
+  margin-top: 2%;
+}
+
+.btn-portafolio {
+  background-color: #82624D;
+  color: white;
+}
+
+.pilares-title {
+  color: #063B49 !important;
+  font-size: 3.5em !important;
 }
