@@ -59,43 +59,34 @@
   <div class="wrapper">
 
     <!-- HEADER -->
-    <header id="header" class="header-transparent">
+    <header id="header" class="header-dark">
       <div id="header-wrap">
-                <div class="container">
+        <div class="container">
 
-                    <!--LOGO-->
-                    <div id="logo">
-                        <a href="index.html" class="logo" data-dark-logo="{{site.baseurl}}images/landing/PROALogo-dark2.png">
-                            <img src="{{site.baseurl}}/images/landing/PROALogo-dark2.png" alt="PROA Logo">
-                        </a>
-                    </div>
-                    <!--END: LOGO-->
+          <div id="logo">
+            <a href="{{site.baseurl}}/index.html" class="logo" data-dark-logo="{{site.baseurl}}/images/landing/logonav.png">
+            <img src="{{site.baseurl}}/images/landing/logonav.png" alt="PROA Logo">
+            </a>
+          </div>
 
-                    <!--MOBILE MENU -->
-                    <div class="nav-main-menu-responsive">
-                        <!--  <button class="lines-button x">
-                            <span class="lines"></span>
-                        </button>-->
-                        <button type="button" class="lines-button x">
-                            <span class="lines"></span>
-                        </button>
+          <div class="nav-main-menu-responsive">
+            <button type="button" class="lines-button x">
+              <span class="lines"></span>
+            </button>
+          </div>
 
-                    </div>
-                    <!--END: MOBILE MENU -->
+          <div class="navigation-wrap">
+            <nav id="mainMenu" class="style-1 main-menu mega-menu">
+              <ul class="main-menu nav nav-pills">
+                <li class=""><a href="{{site.baseurl}}/blog.html">Blog</a></li>        
+                <li class=""><a href="{{site.baseurl}}/categories.html">Categorias</a></li>
+                <li class=""><a href="{{site.baseurl}}/search.html">Buscar</a></li>
+              </ul>
+            </nav>
+          </div>
 
-                    <!--NAVIGATION MENU-->
-                    <div class="navigation-wrap">
-                        <nav id="mainMenu" class="style-1 main-menu slide-menu">
-                            <ul class="main-menu nav nav-pills">
-                                <li><a href="#section-home" class="nav-to">Home</a> </li>
-                                <li><a href="#section-blog" class="nav-to">Blog</a> </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!--END: NAVIGATION-->
-
-                </div>
-            </div>
+        </div>
+      </div>
     </header>
     <!-- END: HEADER -->
     
@@ -104,21 +95,20 @@
   <div class="container">
     <div class="page-title col-md-8">
       <h2>{{page.title}}</h2>
-            <span>Work is easy when you have all tools around you!</span>
-        </div>
-        <div class="breadcrumb col-md-4">
-            <ul>
-                <li><a href="#"><i class="fa fa-home"></i></a>
-                </li>
-                <li><a href="{{site.baseurl}}/blog">Home</a>
-                </li>
-                <li><a href="#">{{page.category}}</a>
-                </li>
-                <li class="active"><a href="#">{{page.title}}</a>
-                </li>
-            </ul>
-        </div>
     </div>
+    <div class="breadcrumb col-md-4">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i></a>
+            </li>
+            <li><a href="{{site.baseurl}}/blog">Home</a>
+            </li>
+            <li><a href="{{site.baseurl}}/categories.html#{{page.category}}">{{page.category}}</a>
+            </li>
+            <li class="active"><a href="#">{{page.title}}</a>
+            </li>
+        </ul>
+    </div>
+  </div>
 </section>
 <!-- END: PAGE TITLE -->
 
@@ -130,16 +120,21 @@
                 <div class="post-item">
                     <div class="post-image">
                         <a href="#">
-                            <img alt="" src="{{site.baseurl}}/images/Belmonte/3.jpg">
+                            <img alt="" src="{{site.baseurl}}/{{page.image_url}}">
                         </a>
                     </div>
                     <div class="post-content-details">
                         <div class="post-title">
-                            <h2>Titulo</h2>
+                            <h2>{{page.title}}</h2>
                         </div>
                         <div class="post-info">
-                            <span class="post-autor">Post by: <a href="#">Alea Grande</a></span>
-                            <span class="post-category">in <a href="#">Productivity</a></span>
+                            <span class="post-autor">Post por: {{post.by}}</span>
+                            <span class="post-category">
+                              en 
+                              <a href="{{site.baseurl}}/categories.html#{{page.category}}">
+                                  {{page.category}}
+                              </a>
+                            </span>
                         </div>
                         <div class="post-description">
                            {{page.content}}
@@ -148,16 +143,21 @@
 
                     <div class="post-meta">
                         <div class="post-date">
-                            <span class="post-date-day">16</span>
-                            <span class="post-date-month">January</span>
-                            <span class="post-date-year">2015</span>
+                            <span class="post-date-day">{{page.date | date: "%d"}} de</span>
+                            <span class="post-date-month">
+                              {% include month.html date=page.date %}
+                              {{month}} 
+                            </span> 
+                            <span class="post-date-year">
+                              {{page.date | date: "%Y"}}
+                            </span>
                         </div>
                     </div>
                 </div>
               </div>
               
             <div class="sidebar sidebar-modern col-md-3">
-
+                <br>
                 <!--widget tags -->
                 <div class="widget clearfix widget-tags">
                     <h3 class="widget-title">Categorias</h3>

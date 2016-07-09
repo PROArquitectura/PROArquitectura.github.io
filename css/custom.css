@@ -16,6 +16,21 @@
 
 /*final proyectos*/
 
+/*search bar*/
+li {
+  /*margin-top: 10px;*/
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.instruction {
+  /*margin-top: 10px;*/
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/*search bar*/
+
 /* overscroll */
 
 
