@@ -83,9 +83,9 @@
           <div class="navigation-wrap">
             <nav id="mainMenu" class="style-1 main-menu mega-menu">
               <ul class="main-menu nav nav-pills">
-                <li class="dropdown"><a href="{{site.baseurl}}/blog.html">Blog</a></li>        
-                <li class="dropdown"><a href="{{site.baseurl}}/categories.html">Categorias</a></li>
-                <li class="dropdown"><a href="{{site.baseurl}}/search.html">Buscar</a></li>
+                <li class=""><a href="{{site.baseurl}}/blog.html">Blog</a></li>        
+                <li class=""><a href="{{site.baseurl}}/categories.html">Categorias</a></li>
+                <li class=""><a href="{{site.baseurl}}/search.html">Buscar</a></li>
               </ul>
             </nav>
           </div>
@@ -100,10 +100,9 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1 class="text-medium">Buscar</h1>
-            <input type="text" id="search-input" placeholder="Escribe aquí..." class="form-control">
-              <ul id="results-container" class="text-small">
-                <span class="instruction">Empieza a escribir para que vayas viendo los resultados</span>
+            <h1 class="text-medium-light" style="font-weight: 400;">Buscar</h1>
+            <input type="text" id="search-input" placeholder="Escribe aquí para buscar" class="form-control">
+              <ul id="results-container" class="search">
               </ul>
           </div>
         </div>
@@ -116,7 +115,7 @@
           searchInput: document.getElementById('search-input'),
           resultsContainer: document.getElementById('results-container'),
           dataSource: '{{ site.baseurl }}/search.json',
-          searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+          searchResultTemplate: '<li><a href="{url}">{title}<\/a><\/li>',
           noResultsText: '<li>No hay resultados</li>',
           limit: 10,
           fuzzy: true,
@@ -125,7 +124,7 @@
     </section>
     
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer id="footer" class="sticky-footer">
       <div class="footer-content p-t-10">
         <div class="container">
           <div class="row text-center">

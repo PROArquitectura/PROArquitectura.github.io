@@ -17,12 +17,23 @@
 /*final proyectos*/
 
 /*search bar*/
-li {
-  /*margin-top: 10px;*/
-  font-size: 2em;
+.search {
+  margin-top: 10px;
+  font-size: 1.5em;
   font-weight: 300;
+  /*margin-bottom: 5px; */
+  text-align: center;
 }
 
+.search li {
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+/* 
+.search li a {
+  border-bottom: 1px solid #E4E4E4;
+}
+ */
 .instruction {
   /*margin-top: 10px;*/
   font-size: 1.5em;
@@ -30,6 +41,12 @@ li {
 }
 
 /*search bar*/
+
+/*.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}*/
 
 /* overscroll */
 
