@@ -1,18 +1,161 @@
 ---
 ---
+<!DOCTYPE html>
+<html lang="en">
 
-{% capture categories %}
-  {% for category in site.categories %}
-    {{ category[0] }}
-  {% endfor %}
-{% endcapture %}
-{% assign sortedtags = categories | split:' ' | sort %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Noticias</title>
 
-{% for category in sortedtags %}
-  <h3 id="{{ category }}">{{ category }}</h3>
-  <ul>
-  {% for post in site.categories[category] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-{% endfor %}
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link href="vendor/animateit/animate.min.css" rel="stylesheet">
+
+  <!-- Vendor css -->
+  <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Template base -->
+  <link href="css/theme-base.css" rel="stylesheet">
+
+  <!-- Template elements -->
+  <link href="css/theme-elements.css" rel="stylesheet"> 
+  
+<!-- Responsive classes -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->  
+
+
+  <!-- Template color -->
+  <!-- <link href="css/color-variations/blue.css" rel="stylesheet" type="text/css" media="screen"> -->
+
+  <!-- LOAD GOOGLE FONTS -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+
+
+  <!-- CSS simple STYLE -->
+  <!-- <link rel="stylesheet" type="text/css" href="homepages/simple/css/simple-style.css" media="screen" /> -->
+
+  <!-- CSS CUSTOM STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/proyectos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+
+    <!--VENDOR SCRIPT-->
+    <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script src="vendor/plugins-compressed.js"></script>
+
+</head>
+
+<div class="wrapper">
+
+    <!--HEADER-->
+    <header id="header" class="header-dark">
+      <div id="header-wrap">
+        <div class="container">
+
+          <div id="logo">
+            <a href="index.html" class="logo" data-dark-logo="images/landing/logonav.png">
+            <img src="images/landing/logonav.png" alt="PROA Logo">
+            </a>
+          </div>
+
+          <div class="nav-main-menu-responsive">
+            <button type="button" class="lines-button x">
+              <span class="lines"></span>
+            </button>
+          </div>
+
+          <div class="navigation-wrap">
+            <nav id="mainMenu" class="style-1 main-menu mega-menu">
+              <ul class="main-menu nav nav-pills">
+                <li class=""><a href="{{site.baseurl}}/blog.html">Blog</a></li>        
+                <li class=""><a href="{{site.baseurl}}/categories.html">Categorias</a></li>
+                <li class=""><a href="{{site.baseurl}}/search.html">Buscar</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </header>
+      <!--END: HEADER-->
+    
+    <section>
+      {% capture categories %}
+        {% for category in site.categories %}
+          {{ category[0] }}
+        {% endfor %}
+      {% endcapture %}
+      {% assign sortedtags = categories | split:' ' | sort %}
+      {% for category in sortedtags %}
+      <div class="categories-list text-center">
+        <p class="text-large-light" id="{{ category }}">{{ category }}</p>
+        <ul>
+          {% for post in site.categories[category] %}
+            <li>
+              <a class="text-medium-light" href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <hr class="separator separator-small m-b-20 m-t-10">
+      {% endfor %}
+    </section>
+      
+    
+    <!-- FOOTER -->
+    <footer id="footer" class="sticky-footer">
+      <div class="footer-content p-t-10">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4 col-md-offset-4">
+              <img src="images/landing/PROALogo-dark2.png" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="copyright-text text-center">
+              <a target="_blank" href="index.html">
+                &copy; 2016 PROArquitectura. All Rights Reserved. 
+              </a>
+            </div>
+            <div class="social-icons m-t-10 center">
+              <ul>
+                <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+  </div>
+  <!-- END: WRAPPER -->
+
+  <!-- GO TOP BUTTON -->
+  <a class="gototop gototop-button black-button" href="#"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="js/theme-functions.js"></script>
+
+  <!-- Custom js file -->
+  <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

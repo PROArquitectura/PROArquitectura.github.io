@@ -51,6 +51,7 @@
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
+    <script src="vendor/scrollmagic/ScrollMagic.min.js"></script>
 
 </head>
 
@@ -461,7 +462,7 @@
 
 		<hr class="gray-space">
 
-		<section id="section6" class="como-comprar">
+		<section id="section6" class="como-comprar panel-effect">
 			<img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/como_comprar.jpg"/>
 			<div class="container">
 				<div class="row text-center">
@@ -475,10 +476,22 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="panel-effect" style="height: 100vh;">
+			<div class="outer">
+				<div class="middle">
+					<div class="inner">
+						<p class="footer-effect">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia labore, vitae iure ab laboriosam esse, saepe aliquid magni enim! Rerum dolores reiciendis fuga sed, delectus, sit voluptas praesentium aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, id!				
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- END: CLIENTS -->
 
 		<!-- FOOTER -->
-		<footer class="background-dark text-grey" id="footer">
+		<!-- <footer class="background-dark text-grey" id="footer">
 			<div class="footer-content">
 				<div class="container">
 					<div class="row">
@@ -488,13 +501,13 @@
 							</div>
 							<p style="margin-top: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
 							</p>
-
+		
 						</div>
 					</div>
 					<div class="seperator seperator-dark seperator-simple"></div>
 					<div class="row">
-
-
+		
+		
 						<div class="col-md-4">
 							<div class="widget clearfix widget-contact-us" style="background-image: url('images/world-map.png'); background-position: 50% 55px; background-repeat: no-repeat">
 								<h4 class="widget-title">Contact us</h4>
@@ -513,59 +526,59 @@
 						</div>
 						<div class="col-md-4">
 							<div class="widget clearfix widget-tweeter">
-     <h4 class="widget-title">Recent Tweets</h4>
-</div>
+		     <h4 class="widget-title">Recent Tweets</h4>
+		</div>
 						</div>
-
+		
 						<div class="col-md-4">
-
+		
 							<div class="widget clearfix widget-newsletter">
-                                <form id="widget-subscribe-form" action="include/subscribe-form.php" role="form" method="post" class="form-inline">
-                                    <h4 class="widget-title">Newsletter</h4>
-                                    <small>Stay informed on our latest news!</small>
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
-                                        <input type="email" aria-required="true" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-                                        <span class="input-group-btn">
+		                                <form id="widget-subscribe-form" action="include/subscribe-form.php" role="form" method="post" class="form-inline">
+		                                    <h4 class="widget-title">Newsletter</h4>
+		                                    <small>Stay informed on our latest news!</small>
+		                                    <div class="input-group">
+		                                        <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+		                                        <input type="email" aria-required="true" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+		                                        <span class="input-group-btn">
 											<button type="submit" id="widget-subscribe-submit-button" class="btn btn-primary">Subscribe</button>
 										</span>
-                                    </div>
-                                </form>
-                                <script type="text/javascript">
-                                    jQuery("#widget-subscribe-form").validate({
-                                        submitHandler: function(form) {
-                                            jQuery(form).ajaxSubmit({
-                                                dataType: 'json',
-                                                success: function(text) {
-                                                    if (text.response == 'success') {
-                                                        $.notify({
-                                                            message: "You have successfully subscribed to our mailing list."
-                                                        }, {
-                                                            type: 'success'
-                                                        });
-                                                        $(form)[0].reset();
-
-                                                    } else {
-                                                        $.notify({
-                                                            message: text.message
-                                                        }, {
-                                                            type: 'warning'
-                                                        });
-                                                    }
-                                                }
-                                            });
-                                        }
-                                    });
-                                  </script>
-                            </div>
-
+		                                    </div>
+		                                </form>
+		                                <script type="text/javascript">
+		                                    jQuery("#widget-subscribe-form").validate({
+		                                        submitHandler: function(form) {
+		                                            jQuery(form).ajaxSubmit({
+		                                                dataType: 'json',
+		                                                success: function(text) {
+		                                                    if (text.response == 'success') {
+		                                                        $.notify({
+		                                                            message: "You have successfully subscribed to our mailing list."
+		                                                        }, {
+		                                                            type: 'success'
+		                                                        });
+		                                                        $(form)[0].reset();
+		
+		                                                    } else {
+		                                                        $.notify({
+		                                                            message: text.message
+		                                                        }, {
+		                                                            type: 'warning'
+		                                                        });
+		                                                    }
+		                                                }
+		                                            });
+		                                        }
+		                                    });
+		                                  </script>
+		                            </div>
+		
 						</div>
-
-
-
+		
+		
+		
 					</div>
-
-
+		
+		
 				</div>
 			</div>
 			<div class="copyright-content">
@@ -591,7 +604,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 		<!-- END: FOOTER -->
 
 	</div>

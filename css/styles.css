@@ -118,21 +118,21 @@
 .shadow {
   text-shadow: -2px -2px 15px rgba(0, 0, 0, 0.5);
 }
-.
-/*
-.blog {
-  padding-bottom: 0;
-  padding-top: 0;
-}*/
 
-/*.portafolio {
-  padding-top: 0;
-  padding-bottom: 0;
+.categories-list {
+
 }
 
-.portafolio .container {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-}*/
+.categories-list p {
+  color: black;
+  margin-bottom: 0;
+}
+
+.categories-list a {
+  /*text-decoration: underline !important;*/
+  color: gray;
+}
+
+.categories-list a:hover {
+  color: #8686E8;
+}
