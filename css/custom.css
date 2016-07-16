@@ -53,15 +53,34 @@
 .panel-effect {
   /*height: 100vh;*/
   width: 100%;
+  height: 100%;
   /*background-color: rgba(255, 255, 255, 0.9);*/
 }
 
 .footer-effect {
-  font-size: 4.5em;
+  font-size: 6em;
   color: #A7A7A7;
   line-height: 1em;
   font-weight: 100;
   text-align: center;
+}
+
+.footer-effect a {
+  color: #A7A7A7;
+}
+
+.footer-effect a:hover {
+  color: #7884F7;
+}
+
+.footer-effect p {
+  text-transform: uppercase;
+  margin-top: 3%;
+  /*margin-bottom: 10%;*/
+}
+
+.footer-top-img {
+  margin-top: 10%;
 }
 
 .outer {
@@ -83,6 +102,41 @@
     width: 100%;
 }
 
+
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.panel .additionalContent {
+    /*top:0;*/
+    /*position: absolute;*/
+}
+.blue {
+    background-color: #3883d8;
+    z-index:10;
+}
+.turqoise {
+    background-color: #38ced7;
+    z-index:9;
+    height:auto;
+}
+.panel > b {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: visible;
+    top: 50%;
+}
 
 /* overscroll */
 

@@ -104,7 +104,7 @@
               {% for post in site.posts limit:2 %}
                 <div class="col-md-6">
                   <img src="{{post.image_url}}" alt="" class="img-responsive">
-                  <h1>{{post.title}}</h1>
+                  <h1>{{ post.title | strip_html | truncatewords:4}}</h1>
                   <p>
                     {{ post.content | strip_html | truncatewords:30}}
                   </p>
@@ -125,7 +125,7 @@
               {% for post in site.posts offset:2 limit:3 %}
                 <div class="col-md-4">
                   <img src="{{post.image_url}}" alt="" class="img-responsive">
-                  <h1>{{post.title}}</h1>
+                  <h1>{{ post.title | strip_html | truncatewords:2}}</h1>
                   <p>
                     {{ post.content | strip_html | truncatewords:15}}
                   </p>
@@ -145,7 +145,7 @@
             <div class="row blog-row">
               {% for post in site.posts offset:5 limit:4 %}
                 <div class="col-md-3"><img src="{{post.image_url}}" alt="" class="img-responsive">
-                  <h1>{{post.title}}</h1>
+                  <h1>{{ post.title | strip_html | truncatewords:2}}</h1>
                   <p>
                     {{ post.content | strip_html | truncatewords:10}}
                   </p>
