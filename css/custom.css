@@ -16,6 +16,27 @@
 
 /*final proyectos*/
 
+
+.last-panel
+{
+  
+  background: rgba(255,255,255,.5) !important;
+  
+  font-size: 20px; 
+  /*overflow: visible !important;*/
+  font-size: 3em;
+  
+}
+
+.last-panel-content
+{
+  text-align: center;
+}
+.last-panel-content a:after
+{
+  margin: 0 5px;
+  content: "/";
+}
 /*search bar*/
 .search {
   margin-top: 10px;
