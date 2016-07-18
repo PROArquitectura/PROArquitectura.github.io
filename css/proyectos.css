@@ -31,11 +31,11 @@ ul li {
   list-style: none;
 }
  
-section {
+/*section {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   margin-bottom: 10%;
-}
+}*/
  
 .space {
   margin-top: 5%;
@@ -150,31 +150,5 @@ section {
 /*Belmonte nuevo*/
 
 
-
-.button-container {
-  width: 100%;
-  z-index: 1 !important; 
-  position: absolute; 
-  top: 80%;
-}
-
-.button-container div {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.button-container .button {
-  display: inline-block;
-  width: 40%;
-  color: white
-}
-
-.brochure {
-  background-color: #7EA8E1;
-}
-
-.contacto {
-  background-color: #B9744D;
-}
 
 /*END: Belmonte nuevo*/

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: ZrnicRg;
+  src: url(../fonts/zrnic_rg.woff);
+}
+
+p {
+  font-family: ZrnicRg;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: ZrnicRg;
+  color :white;
+}
+
+section p {
+  font-size: 1.5em;
+  line-height: 1em;
+  color: white;
+}
+
+section h1 {
+  font-size: 3em;
+  line-height: 0.9em;
+}
+
+section h2 {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.orange {
+  color: #F69438;
+}
+
+.button-container {
+  width: 100%;
+  z-index: 1 !important; 
+  position: absolute; 
+  top: 80%;
+}
+
+.button-container div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.button-container .button {
+  display: inline-block;
+  width: 40%;
+  color: white
+}
+
+.brochure {
+  background-color: #7EA8E1;
+}
+
+.contacto {
+  background-color: #B9744D;
+}
+
+#section2 {
+  color: white;
+  background-image: url(../images/Belmonte/fondo-seccion2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#carousel .active {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}

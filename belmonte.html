@@ -2,77 +2,69 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	
-	
-	<link rel="shortcut icon" href="images/favicon.png">
-	<title>Belmonte Plaza</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Belmonte Plaza</title>
 
-	<!-- Bootstrap Core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-	<link href="vendor/animateit/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/animateit/animate.min.css" rel="stylesheet">
 
-	<!-- Vendor css -->
-	<link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">
-	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Vendor css -->
+    <link href="vendor/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-	<!-- Template base -->
-	<link href="css/theme-base.css" rel="stylesheet">
+    <!-- Template base -->
+    <link href="css/theme-base.css" rel="stylesheet">
 
-	<!-- Template elements -->
-	<link href="css/theme-elements.css" rel="stylesheet">	
-	
-<!-- Responsive classes -->
-	<link href="css/responsive.css" rel="stylesheet">
+    <!-- Template elements -->
+    <link href="css/theme-elements.css" rel="stylesheet">
 
-<!--[if lt IE 9]>
-		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->	
+    <!-- Responsive classes -->
+    <link href="css/responsive.css" rel="stylesheet">
 
 
-	<!-- Template color -->
-	<!-- <link href="css/color-variations/blue.css" rel="stylesheet" type="text/css" media="screen"> -->
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
 
-	<!-- LOAD GOOGLE FONTS -->
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- Template color -->
+    <link href="css/color-variations/green-light.css" rel="stylesheet" type="text/css" media="screen">
 
+    <!-- LOAD GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
 
-	<!-- CSS simple STYLE -->
-	<!-- <link rel="stylesheet" type="text/css" href="homepages/simple/css/simple-style.css" media="screen" /> -->
-
-	<!-- CSS CUSTOM STYLE -->
+    <!-- CSS CUSTOM STYLE -->
     <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen" />
+    <link rel="stylesheet" href="css/belmonte.css">
 
-    <link rel="stylesheet" type="text/css" href="css/proyectos.css" media="screen" />
+    <!-- FONTS -->
+
 
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
     <script src="vendor/scrollmagic/ScrollMagic.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
 
 </head>
 
-<body>
-	
-	<!-- WRAPPER -->
-	<div class="wrapper">
+<body class="wide" style="background-color: #272936;">
 
-		<!--HEADER-->
-		<header id="header" class="header-transparent">
-            <div id="header-wrap" class="cream-header">
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header id="header" class="header-transparent">
+            <div id="header-wrap navbar-fixed-top">
                 <div class="container">
 
                     <!--LOGO-->
                     <div id="logo">
-                        <a href="index.html" class="logo" data-dark-logo="images/landing/logonav.png">
-                            <img src="images/landing/logonav.png" alt="PROA Logo">
+                        <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
+                            <img src="images/logo.png" alt="Polo Logo">
                         </a>
                     </div>
                     <!--END: LOGO-->
@@ -91,10 +83,14 @@
 
                     <!--NAVIGATION MENU-->
                     <div class="navigation-wrap">
-                        <nav id="mainMenu" class="style-1 main-menu slide-menu">
+                        <nav id="mainMenu" class="style-1 main-menu slide-menu ">
                             <ul class="main-menu nav nav-pills">
-                                <li><a href="#section-home" class="nav-to">Home</a> </li>
-                                <li><a href="#section-blog" class="nav-to">Blog</a> </li>
+                                <li><a href="#slider" class="nav-to">Home</a> </li>
+                                <li> <a href="#section-about" class="nav-to">About</a> </li>
+                                <li> <a href="#section-portfolio" class="nav-to">Portfolio</a> </li>
+                                <li> <a href="#section-testimonials" class="nav-to">Testimonials</a> </li>
+                                <li> <a href="#section-blog" class="nav-to">Blog</a> </li>
+                                <li> <a href="#footer" class="nav-to">Contact</a> </li>
                             </ul>
                         </nav>
                     </div>
@@ -103,227 +99,315 @@
                 </div>
             </div>
         </header>
-			<!--END: HEADER-->
+        <!-- END: Header -->
 
-		<section>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 no-padding"><img src="images/Belmonte/1.jpg" alt="" class="img-responsive center-block"></div>
-				</div>
-			</div>
-		</section>
-	
-		<hr class="gray-divider">
-		<hr class="white-divider">
-						
-		<section>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 no-padding"><img src="images/Belmonte/aqui_ahora.jpg" class="img-responsive center-block" alt=""></div>
-				</div>
-			</div>
-		</section>
+        <!-- INSPIRO SLIDER -->
+        <div id="slider" class="inspiro-slider slider-fullscreen" data-height-xs="360">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img id="fondo" class="center-block img-responsive" src="images/Belmonte/seccion1-fondo-texto.png" />
+                <!-- <div class="container" style=";"> -->
+                    <div class="button-container">
+                        <div class="text-center">
+                            <!-- Captions -->
+                            <a href="" class="button brochure">Descargar Brochure</a>
+                            <a href="" class="button contacto">Contactanos</a>
+                            <!-- End: Captions -->
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <!-- END: Slide 1 -->
+        
+        </div>
+        <!-- END: INSPIRO SLIDER -->
 
-		<hr class="white-divider">
-		<hr class="gray-divider">
+        <section id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <br class="hidden-sm">
+                        <div style="height: 50%">
+                            <h1 class="">A otro nivel!</h1>
+                            <p class="no-padding">Belmonte plaza es un proyecto de 5 torres en la avenida Centenario de Armenia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-4">
+                        <img id="fondo" class="center-block img-responsive" src="images/Belmonte/seccion2-foto1.jpg"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-9">
+                        <br>
+                        <h2>Paisaje cultural cafetero y vida nocturna</h2>
+                        <p>Apartamentos disenados para dar alta calidad de vida, aprovechando los beneficios del campo y de la ciudad en 1,2 y 3 alcobas.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img id="fondo" class="center-block img-responsive" src="images/Belmonte/seccion2-foto2.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section style="background-color: #f6f6f6">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<img src="images/Belmonte/3.jpg" alt="" class="img-responsive center-block">
-					</div>
-					<div class="col-md-6">
-						<h1 class="text-medium">Belmonte Plaza</h1>
-						<hr>
-						<ul>
-							<li>
-								<p class="caption">
-									ARMENIA-QUINDIO
-								</p>
-							</li>
-							<li>
-								<p class="caption">
-									Conjunto residencial con diseño innovador y una maravillosa vista al paisaje cultural cafetero.
-								</p>
-							</li>
-							<li>
-								<p class="caption">
-									Disfrute una ubicación privilegiada dentro de la ciudad con los atributos del campo.
-								</p>
-							</li>
-							<div class="social-icons-caption">
-							<ul>
-								<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
-						</div>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+        <section id="carousel">
+            <div class="container">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="images/Belmonte/carousel/lobby torre A con edificio4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/Belmonte/carousel/lobby torre A con edificio4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/Belmonte/carousel/lobby torre A con edificio4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/Belmonte/carousel/lobby torre A con edificio4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="images/Belmonte/carousel/lobby torre A con edificio4.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<hr class="gray-divider">
-		<hr class="white-divider">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Acabados de primera, lobby tipo hotel</h1>
+                        <p></p>
+                        <img src="images/Belmonte/seccion5-iconos.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/Belmonte/seccion5-edificio-fondo.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<img src="images/Belmonte/4.jpg" alt="" class="img-responsive center-block">
-					</div>
-				</div>
-			</div>
-		</section>
+        <section>
+            <img src="images/Belmonte/seccion6.png" alt="" class="img-responsive center-block">
+        </section>
 
-		<hr class="white-divider">
-		<hr class="gray-divider">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h1 class="text-center orange">Interiores en 360</h1>
+                        <br>
+                        <embed src="images/Belmonte/360.swf">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<section  style="background-color: #f6f6f6">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<img src="images/Belmonte/5.jpg" alt="" class="img-responsive center-block">
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		<hr class="gray-divider">
-		<hr class="white-divider">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <img src="images/Belmonte/ultimaseccion.png" alt="" class="img-responsive center-block">
+                </div>
+            </div>
+        </section>
 
-		<section>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
-						<h1 class="text-medium">Apartamentos de 1, 2 y 3 alcobas, desde 60mts2 hasta 217mts2</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-md-offset-2">
-						<img src="images/Belmonte/6.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="col-md-4">
-						<img src="images/Belmonte/7.jpg" alt="" class="img-responsive">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<img src="images/Belmonte/8.jpg" alt="" class="img-responsive">
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- Portfolio -->
+        <section id="section-portfolio" class="background-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 center text-center m-b-60">
+                        <h2>Portfolio</h2>
+                        <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio">
+                    <!--Portfolio Filter-->
+                    <ul class="portfolio-filter portfolio-filter-classic" id="portfolio-filter" data-isotope-nav="isotope">
+                        <li class="ptf-active" data-filter="*">Show All</li>
+                        <li data-filter=".artwork">Artwork</li>
+                        <li data-filter=".banner">Banner</li>
+                        <li data-filter=".beauty">Beauty</li>
+                        <li data-filter=".marketing">Marketing</li>
+                        <li data-filter=".design">Design</li>
+                    </ul>
+                    <!-- END: Portfolio Filter -->
 
-		<hr class="white-divider">
-		<hr class="gray-divider">
+                    <!-- Portfolio Items -->
+                    <div id="isotope" class="isotope portfolio-items" data-isotope-item-space="2" data-isotope-mode="masonry" data-isotope-col="3" data-isotope-item=".portfolio-item">
+                        <div class="portfolio-item design artwork">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/25.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/25.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design beauty">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/12.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/12.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design artwork">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/9.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/9.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item banner beauty">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/14.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/14.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design artwork banner">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/15.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/15.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design artwork">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/16.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/17.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design marketing">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/18.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/18.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design artwork">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/7.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/7.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item design artwork banner">
+                            <div class="portfolio-image effect social-links"> <img src="images/mockup/20.jpg" alt="">
+                                <div class="image-box-content">
+                                    <p>
+                                        <a title="Your image title here!" data-lightbox-type="image" href="images/mockup/20.jpg"><i class="fa fa-expand"></i></a>
+                                        <a href="portfolio-page-basic.html"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Portfolio Items -->
+                </div>
+            </div>
+        </section>
+        <!-- End: Portfolio -->
 
-		<section style="background-color: #f6f6f6">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<img src="images/Belmonte/9.jpg" alt="" class="img-responsive center-block">
-						</div>
-				</div>
-			</div>
-		</section>
+        <!-- Testimonial -->
+        <section id="section-testimonials">
+            <div class="container">
+                <!-- Heading -->
+                <div class="text-center m-b-60">
+                    <h2>Our awesome clients.</h2>
+                    <p>just a few words from them...</p>
+                </div>
+                <!-- End: Heading -->
 
-		<hr class="gray-divider">
-		<hr class="white-divider">
+                <!-- Testimonials -->
+                <div id="testimonials">
 
-		<section>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<img src="images/Belmonte/clubhouse.jpg" alt="" class="img-responsive center-block">
-					</div>
-				</div>
-			</div>
-		</section>
+                    <!-- Testimonials item -->
+                    <div class="testimonial-item">
+                        <img src="images/team/9.jpg" alt="">
+                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+                        <span>Alan Monre. CEO, Square Software.</span>
+                    </div>
+                    <!-- End: Testimonials item-->
 
-		<hr class="white-divider">
-		<hr class="gray-divider">
+                    <!-- Testimonials item -->
+                    <div class="testimonial-item">
+                        <img src="images/team/10.jpg" alt="">
+                        <p>Art is the only serious thing in the world. And the artist is the only person who is never serious.</p>
+                        <span>Resa Smith. Developer @Apple.inc</span>
+                    </div>
+                    <!-- End: Testimonials item-->
 
-		<section class="panel-effect" style="background-color: #f6f6f6;">
-			<div class="container-fluid">
-				<div class="row gallery">
-					<div class="col-md-5 no-padding">
-						<div class="image-box effect erdi">
-							<img src="images/Belmonte/11.jpg" alt="" class="">
-							<div class="image-box-content"></div>
-						</div>
-					</div>
-					<div class="col-md-6 pull-right no-padding">
-						<div class="image-box effect erdi">
-							<img src="images/Belmonte/12.jpg" alt="" class="">
-							<div class="image-box-content"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <!-- Testimonials item -->
+                    <div class="testimonial-item">
+                        <img src="images/team/11.jpg" alt="">
+                        <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+                        <span>Ariol Perry, Creative Designer.</span>
+                    </div>
+                    <!-- End: Testimonials item-->
 
-		<!-- <hr class="gray-divider"> -->
-		<!-- <hr class="white-divider"> -->
+                </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $("#testimonials").owlCarousel({
+                            margin: 60,
+                            nav: true,
+                            navText: ['<i class="fa fa-arrow-left icon-white"></i>', '<i class="fa fa-arrow-right icon-white"></i>'],
+                            autoplay: false,
+                            autoplayHoverPause: true,
+                            dots: true,
+                            singleItem: true,
+                            items: 1,
+                           
+                        });
+                    });
 
-		<section class="panel-effect" style="height: 100vh;">
-			<div class="outer">
-				<div class="middle">
-					<div class="inner">
-						<p class="footer-effect">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia labore, vitae iure ab laboriosam esse, saepe aliquid magni enim! Rerum dolores reiciendis fuga sed, delectus, sit voluptas praesentium aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, id!				
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                </script>
+                <!-- End: Testimonials -->
+            </div>
+        </section>
+        <!-- End: Testimonial -->
+        
+    </div>
+    <!-- End: Wrapper -->
 
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme-functions.js"></script>
 
-<!-- 
-		<div class="seperator m-b-0"></div>
-		
-		FOOTER
-		<footer id="footer">
-			<div class="footer-content p-t-10">
-				<div class="container">
-					<div class="row text-center">
-						<div class="col-md-4 col-md-offset-4">
-							<img src="images/landing/PROALogo-dark2.png" alt="" class="img-responsive">
-						</div>
-					</div>
-					<div class="row text-center">
-						<div class="copyright-text text-center">
-							<a target="_blank" href="index.html">
-								&copy; 2016 PROArquitectura. All Rights Reserved. 
-							</a>
-						</div>
-						<div class="social-icons m-t-10 center">
-							<ul>
-								<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer> -->
-		<!-- END: FOOTER -->
-
-	</div>
-
-	<!-- END: WRAPPER -->
-
-	<!-- GO TOP BUTTON -->
-	<a class="gototop gototop-button black-button" href="#"><i class="fa fa-chevron-up"></i></a>
-	<a class="brochure-button black-button" href="#">Descargar brochure</a>
-
-	<!-- Theme Base, Components and Settings -->
-	<script src="js/theme-functions.js"></script>
-
-	<!-- Custom js file -->
-	<script src="js/custom.js"></script>
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
 
 </body>
 
