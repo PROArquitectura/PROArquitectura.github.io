@@ -6,7 +6,7 @@ image_url: post_images/Avances_de_Obra_Belmonte_ junio_2016_01.jpg
 by:
 ---
 
-Estas son imágenes del avance de obra orre 1 en junio de nuestro proyecto de construcción de apartamentos Belmonte en Armenia, Quindio, Colombia
+Estas son imágenes del avance de obra Torre 1 en junio de nuestro proyecto de construcción de apartamentos Belmonte en Armenia, Quindio, Colombia
 
 
 !["imagen1"]({{site.baseurl}}/post_images/Avances_de_Obra_Belmonte_ junio_2016_01.jpg){: .img-responsive}
