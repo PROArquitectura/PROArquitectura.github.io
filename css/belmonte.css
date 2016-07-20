@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 section p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1em;
   color: white;
 }
@@ -65,9 +65,115 @@ section h2 {
   background-position: center;
   background-size: contain;
 }
-
+/* 
 #carousel .active {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  -ms-transform: scale(1.5); IE 9
+  -webkit-transform: scale(1.5); Chrome, Safari, Opera
   transform: scale(1.5);
+} */
+
+/* Tabs apartamentos */
+
+.nav-tabs li{
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.tab-link {
+  color: white !important;
+  /*border: none !important;*/
+}
+
+.nav-tabs li a {
+  background: transparent !important;
+  color: white;
+  font-family: ZrnicRg;
+  font-size: 3em;
+}
+
+.nav-tabs > li > a:hover{
+  color: white;
+}
+
+.nav-tabs > li > a{
+  border: none !important;
+}
+
+.nav-tabs > li.active > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white !important;
+  border-bottom: orange 5px solid !important;
+}
+
+.pane-container {
+  background-color: white!important;
+  width: 100% !important;
+}
+
+.pane-container * {
+  color: black;
+}
+
+#apartamentos-selector{
+  font-family: ZrnicRg;
+}
+
+#apartamentos-selector > li.active > a {
+  color:orange !important;
+  /*color: black !important;*/
+  border-bottom: none!important;
+}
+
+/*#apartamentos-selector > li.active {
+  border-bottom: orange 3px solid !important;
+
+}*/
+
+#apartamentos-selector {
+  color: black !important;
+  border-bottom: none !important;
+}
+
+#apartamentos-selector li:first-child {
+  background-color: black;
+  font-size: 2rem;
+}
+
+#apartamentos-selector > li:first-child a {
+  color: white;
+}
+
+#apartamentos-selector li {
+  color: black;
+  border: 2px solid black;
+  
+}
+
+#apartamentos-selector > li a {
+  background:transparent;
+  font-size: 2rem;
+  color: black;
+}
+
+#ubicacion {
+  border: 2px solid white;
+}
+/*.tab-content {
+  background-color: white;
+}*/
+
+/*END: Tabs apartamentos*/
+
+/* 360 */
+
+.esquina {
+  height: 80%;
+  width: 80%;
 }
