@@ -57,12 +57,12 @@
 
 <body>
 	<!-- SITE LOADER -->
-	<div class="loader-wrapper vertical-align">
+	<!-- <div class="loader-wrapper vertical-align">
 		<div class="loader">
 			<img width="40" src="images/svg-loaders/puff.svg" alt="">
 			<span class="loader-title">Page is loading, just a sec...</span>
 		</div>
-	</div>
+	</div> -->
 	<!-- END: SITE LOADER -->
 
 	<!-- WRAPPER -->
@@ -102,7 +102,7 @@
 			</div>
 		</header>
 
-		<section id="section1" class="hover-menu">
+		<section id="section1" class="hover-menu" style="min-height: 100vh;">
 
 			<!-- <img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/proyectos_fondo.jpg"/> -->
 			<img id="fondo" class="back-sect1-active back-sect1 img-responsive" src="images/landing/belmonte.jpg"/>
@@ -113,17 +113,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 shadow">
-						<ul>
-							<li>
-								<a class="text-large-light link-project" data-img="belmonte" href="belmonte.html">BELMONTE PLAZA</a>
-							</li>
-							<li>
-								<a class="text-large-light link-project" data-img="lindaraja" href="lindaraja.html">LINDARAJA</a>
-								</li>
-							<li>
-								<a class="text-large-light link-project" data-img="portafolio" href="">PORTAFOLIO</a>
-							</li>
-						</ul>
+						<!-- <div class="outer">
+							<div class="middle">
+								<div class="inner"> -->
+									<ul>
+										<li>
+											<a class="text-large-light link-project" data-img="belmonte" href="belmonte.html">BELMONTE PLAZA</a>
+										</li>
+										<li>
+											<a class="text-large-light link-project" data-img="lindaraja" href="lindaraja.html">LINDARAJA</a>
+											</li>
+										<li>
+											<a class="text-large-light link-project" data-img="portafolio" href="">PORTAFOLIO</a>
+										</li>
+									</ul>
+								<!-- </div>
+							</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -131,20 +137,28 @@
 
 		<section>
 			<div class="container">
-				<div class="row col-md-6 col-md-offset-1">
-					<h1 class="text-medium-light m-b-0">SOMOS</h1>
-					<h1 class="text-medium-light">PROArquitectura</h1>
-					<p>PROA rompe el mar de monotonía imperante, innovando en diseño, conceptos, confort y tecnología en manejo de espacios y materiales</p>
-					<p><a href="nosotros.html" style="text-decoration: underline !important;">Conoce más</a> sobre PROArquitectura</p>
-				</div>
-				<div class="row col-md-3 col-md-offset-2">
-					<img src="images/landing/imagen-acerca-landing.jpg" alt="" class="img-responsive">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1">
+						<br>
+						<br>
+						<h1 class="text-medium-light m-b-0">SOMOS</h1>
+						<h1 class="text-medium-light"><span class="underline">PRO</span>Arquitectura</h1>
+						<p>PROA rompe el mar de monotonía imperante, innovando en diseño, conceptos, confort y tecnología en manejo de espacios y materiales</p>
+						<p><a href="nosotros.html" class="underline">Conoce más</a> sobre PROArquitectura</p>
+					</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images/landing/imagen-acerca-landing.jpg" alt="" class="img-responsive">
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="section2" class="portafolio no-padding">
-			<h1 class="text-center text-medium-light">NUESTROS ULTIMOS PROYECTOS</h1>
+			<h1 class="text-center text-medium-light"><span class="underline">NUESTROS</span> ULTIMOS PROYECTOS</h1>
+			<br>
+			<br>
+			<br>
 			<div id="isotope" class="isotope" data-isotope-mode="masonry" data-isotope-col="3" data-isotope-item-space="0">
 				<div class="isotope-item">
 					<div class="effect social-links">
@@ -240,12 +254,13 @@
 			</div>
 		</section>
 
-		<section id="section4" style="background-color: #494949; ">
+		<section id="section4" class="p-b-30 p-t-30">
+			<img id="fondo" class="back-sect1-active back-sect1 img-responsive" src="images/landing/fondo-noticias.png"/>
 			{% include last_posts.html %}
 		</section>
 
 		<!-- CONTACTO -->
-		<section id="section5" class="contact-form background-overlay-dark parallax fullscreen" data-stellar-background-ratio="0.1" style="background-image: url(images/landing/contacto_fondo.jpg); background-position: 50% 25px;">
+		<section id="section5" class="contact-form background-overlay-dark parallax fullscreen" data-stellar-background-ratio="0.1" style="min-height: 100vh; background-image: url(images/landing/contacto_fondo.jpg); background-position: 50% 25px;">
 			<!-- <img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/contacto_fondo.jpg"/> -->
 			<div class="container">
 				<div class="row">
@@ -298,21 +313,57 @@
 				</div>
 			</div>
 		</section>
-
-		<section  id="section6" class="como-comprar panel-effect" style="background-image: url(images/landing/como-comprar-fondo.png); background-size: contain; background-repeat: no-repeat !important; background-position: center">
+		<hr style="border-top: 3px solid #F69438" class="p-t-0 m-t-0">
+		<section  id="section6" class="como-comprar panel-effect" style="height: 100vh; background-image: url(images/landing/como-comprar-fondo.png); background-size: cover; background-repeat: no-repeat !important; background-position: center">
 			<!-- <img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/como-comprar-fondo.png"/> -->
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-md-12">
 						<div class="titulo text-large-light text-white">
 							COMO COMPRAR
 						</div>
-						<button class="btn">Nacionales</button>
-						<button class="btn">Internacionales</button>
+						<button data-toggle="modal" data-target="#nacionales" class="btn">Nacionales</button>
+						<button data-toggle="modal" data-target="#internacionales" class="btn">Interacionales</button>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<div class="modal fade" id="nacionales" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="modal-label">Medium Modal</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="internacionales" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="modal-label">Medium Modal</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<hr class="white-space">
 

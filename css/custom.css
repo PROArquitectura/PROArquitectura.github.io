@@ -67,6 +67,21 @@
 #nosotros section {
   padding: 0;
 }
+
+.underline {
+  border-bottom: 2px solid black;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) { 
+    .row.vertical-align {
+        display: block; /* turn off the flexible box layout */
+    }
+}
 /* 
 
 #pinContainer {
@@ -111,7 +126,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    /*background-color: rgba(255, 255, 255, 0.9);*/
 }
 
 .middle {
