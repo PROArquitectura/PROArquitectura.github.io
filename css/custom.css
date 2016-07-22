@@ -20,7 +20,7 @@
 .last-panel
 {
   background: rgba(255,255,255,.9) !important;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .last-panel p > a {
@@ -45,10 +45,10 @@
   content: " / ";
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .last-panel p > a {
-    font-size: 10px !important;
-    line-height: 20px;
+    font-size: 3em !important;
+    line-height: 1em;
     font-weight: 100;
   }
   
@@ -56,6 +56,12 @@
     font-size: 0.5rem !important;
   }
    */
+}
+
+@media screen and (max-width: 768px) {
+  #section1 {
+    height: 20vh !important;
+  }
 }
 
 /*search bar*/
