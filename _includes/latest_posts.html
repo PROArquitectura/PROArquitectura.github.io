@@ -1,0 +1,31 @@
+<div id="blog">
+  <div class="container">
+    <div style="border: 2px solid black;">
+      
+    <div class="row" style="margin: 20px;">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h3>Blog</h3>
+            <p>Artículos sobre diseño, nuevas tendencias, avances de obra, nuevos proyectos e información del eje cafetero.</p>
+            <hr style="border-top: 2px solid black; width: 20%; float: left;" class="p-t-0 m-t-0">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-3 hidde-xs hidde-sm"></div> -->
+      {% for post in site.posts limit:2 %}
+
+        <div class="col-md-3">
+          <img alt="" src="{{post.image_url}}" style="height: 100%; width: 100%">
+          <h5 class="m-b-5">{{post.title}}</h5>
+          <p class="m-b-5"> {{ post.content | strip_html | truncatewords:10}}</p>
+          <a class="read-more m-b-5" href="{{post.url}}">leer mas<i class="fa fa-long-arrow-right"></i></a>
+        </div>
+
+      {% endfor %}
+
+    </div>
+    </div>
+  </div>
+</div>
+<!-- END: BLOG -->

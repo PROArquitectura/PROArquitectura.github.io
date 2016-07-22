@@ -163,7 +163,7 @@ section h2 {
 }
 
 #ubicacion {
-  border: 2px solid white;
+  /*border: 2px solid white;*/
 }
 /*.tab-content {
   background-color: white;
@@ -177,3 +177,8 @@ section h2 {
   height: 80%;
   width: 80%;
 }
+
+.pane-container {
+  /*height: 100vh;*/
+}
+

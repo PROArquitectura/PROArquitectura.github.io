@@ -39,13 +39,13 @@ $(function () { // wait for document ready
     loop:true,
     margin:10,
     nav:false,
-    responsive: true,
-    addClassActive: true,
+    responsive: true
+    // addClassActive: true,
     // singleItem : true,
     // autoHeight : true,
     // stagePadding: 50,
     // autoWidth:true,
-    autoplay: true,
+    // autoplay: true,
   });
 
 });
