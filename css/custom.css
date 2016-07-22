@@ -45,6 +45,15 @@
   content: " / ";
 }
 
+@media screen (max-width: 768px) {
+  .last-panel p > a {
+    font-size: 1em;
+    color: #B1B1B1;
+    line-height: 1em;
+    font-weight: 100;
+  }
+}
+
 /*search bar*/
 .search {
   margin-top: 10px;

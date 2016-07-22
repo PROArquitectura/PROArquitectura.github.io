@@ -65,6 +65,12 @@ section h2 {
     }
 }
 
+@media screen and (width: 768px) {
+   .button-container {
+      top: 80%;
+    }
+}
+
 .brochure {
   background-color: #7EA8E1;
 }
