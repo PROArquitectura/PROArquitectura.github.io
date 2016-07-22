@@ -50,6 +50,17 @@ section h2 {
   color: white
 }
 
+@media screen and (max-width: 768px) {
+    .button-container div {
+      width: 100%;
+    }
+
+    .button-container .button {
+      width: 100%;
+      margin:0;
+    }
+}
+
 .brochure {
   background-color: #7EA8E1;
 }
