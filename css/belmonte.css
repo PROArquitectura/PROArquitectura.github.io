@@ -1,14 +1,14 @@
-@font-face {
+/*@font-face {
   font-family: ZrnicRg;
   src: url(../fonts/zrnic_rg.woff);
-}
+}*/
 
 p {
-  font-family: ZrnicRg;
+  /*font-family: ZrnicRg;*/
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: ZrnicRg;
+  /*font-family: ZrnicRg;*/
   color :white;
 }
 
@@ -34,9 +34,9 @@ section h2 {
 
 .button-container {
   width: 100%;
-  z-index: 1 !important; 
-  position: absolute; 
-  top: 80%;
+  z-index: 99 !important; 
+  /*position: absolute; */
+  /*top: 80%;*/
 }
 
 .button-container div {
@@ -110,7 +110,7 @@ section h2 {
 .nav-tabs li a {
   background: transparent !important;
   color: white;
-  font-family: ZrnicRg;
+  /*font-family: ZrnicRg;*/
   font-size: 3em;
 }
 
@@ -143,7 +143,7 @@ section h2 {
 }
 
 #apartamentos-selector{
-  font-family: ZrnicRg;
+  /*font-family: ZrnicRg;*/
 }
 
 #apartamentos-selector > li.active > a {

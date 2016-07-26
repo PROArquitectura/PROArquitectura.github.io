@@ -39,7 +39,8 @@ $(function () { // wait for document ready
     loop:true,
     margin:10,
     nav:false,
-    responsive: true
+    responsive: true,
+    autoHeight: false
     // addClassActive: true,
     // singleItem : true,
     // autoHeight : true,
