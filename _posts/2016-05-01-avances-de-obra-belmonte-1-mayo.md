@@ -1,7 +1,7 @@
 ---
 layout: post_view
 title: Avances de Obra Belmonte - Torre 1
-category: Avances de obra
+category: "Avances de obra"
 image_url: post_images/Avances_de_Obra_Belmonte_ mayo_2016_24.jpg
 by:
 ---

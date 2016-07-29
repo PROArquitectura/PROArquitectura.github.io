@@ -1,7 +1,7 @@
 ---
 layout: post_view
 title: Cómo disfrutar de la mejor vista en Armenia
-category: Proarquitectura
+category: "Proarquitectura"
 image_url: post_images/Como_disfrutar_mejor_vista_Armenia_Quindio_facilmente_01.jpg
 by:
 ---

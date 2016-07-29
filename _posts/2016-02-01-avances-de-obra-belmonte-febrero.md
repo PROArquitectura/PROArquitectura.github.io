@@ -1,7 +1,7 @@
 ---
 layout: post_view
 title: Avances de Obra Belmonte
-category: Avances de obra
+category: "Avances de obra"
 image_url: post_images/avances_de_obra_belmonte_febrero_2016_1.jpg
 by:
 ---
