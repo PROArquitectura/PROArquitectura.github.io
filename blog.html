@@ -18,7 +18,7 @@
   <link href="vendor/animateit/animate.min.css" rel="stylesheet">
 
   <!-- Vendor css -->
-  <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <!-- <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet"> -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Template base -->
@@ -171,13 +171,13 @@
                 <h3 class="widget-title">Categorias</h3>
                 <div class="tags">
                     {% for category in site.categories %}
-                      <a href="{{site.baseurl}}/categories#{{category[0]}}">{{category[0]}}</a>
+                      <a href="{{site.baseurl}}/categories.html#{{category[0]}}">{{category[0]}}</a>
                     {% endfor %}
                 </div>
             </div>
                 <!--end: widget tags -->
                 <!--widget archive-->
-            <div class="widget clearfix widget-archive">
+            <!-- <div class="widget clearfix widget-archive">
                 <h3 class="widget-title">Archivo</h3>
                 <ul class="list list-lines">
                     {% for post in site.posts %}
@@ -188,12 +188,12 @@
                         <h4>{{ currentyear }}</h4>
                         {% capture year %}{{currentyear}}{% endcapture %} 
                       {% endif %}
-                          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                          <li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></li>
                         </ul>
                       </li>
                     {% endfor %}
                 </ul>
-            </div>
+            </div> -->
                 <!--end: widget archive-->
           </div>
       </div>

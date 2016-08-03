@@ -34,13 +34,13 @@ $(function () { // wait for document ready
   .addTo(controller_section7);
 
   $('.owl-carousel').owlCarousel({
-    // center: true,
+    center: true,
     items:1,
     loop:true,
     margin:10,
-    nav:false,
-    responsive: true,
-    autoHeight: false
+    // nav:true
+    // responsive: true,
+    // autoHeight: true
     // addClassActive: true,
     // singleItem : true,
     // autoHeight : true,
