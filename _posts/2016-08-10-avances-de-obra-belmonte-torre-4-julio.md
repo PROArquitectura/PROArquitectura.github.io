@@ -2,11 +2,13 @@
 layout: post_view
 title: Avances de Obra Torre 4 Julio
 category: "Avances de obra"
-image_url: http://i.imgur.com/oFIliAP.jpg
+image_url: http://i.imgur.com/KM8SOGr.jpg
 by:
 ---
 
-!["Imagen1"](http://i.imgur.com/KM8SOGr.jpg){: .img-responsive}
+Imagenes del progreso de la obra en la torre 4 del complejo Belmonte Plaza en el mes de Julio 
+
+!["Imagen1"](http://i.imgur.com/oFIliAP.jpg){: .img-responsive}
 
 !["Imagen2"](http://i.imgur.com/JFs20Q0.jpg){: .img-responsive}
 
