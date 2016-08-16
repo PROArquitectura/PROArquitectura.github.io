@@ -334,10 +334,10 @@ var INSPIRO = {};
                               '<i class="fa fa-arrow-right icon-white"></i>'],
                             autoplay: true,
                             dots: true,
-                            autoplayHoverPause: true,
+                            autoplayHoverPause: false,
                             navigation: true,
                             items: 1,
-                            smartSpeed: 1300,
+                            smartSpeed: 100,
                             singleItem: true,
                             callbacks: true,
                             onInitialize: function (event) {
@@ -485,7 +485,7 @@ var INSPIRO = {};
                         navText: ['<i class="fa fa-arrow-left icon-white"></i>',
                               '<i class="fa fa-arrow-right icon-white"></i>'],
                         autoplay: $sliderCarouseAutoPlay,
-                        autoplayHoverPause: true,
+                        autoplayHoverPause: false,
                         dots: $sliderCarouseDots,
                         items: 1,
                         autoHeight: false,
@@ -502,7 +502,7 @@ var INSPIRO = {};
                         navText: ['<i class="fa fa-arrow-left icon-white"></i>',
                               '<i class="fa fa-arrow-right icon-white"></i>'],
                         autoplay: $sliderCarouseAutoPlay,
-                        autoplayHoverPause: true,
+                        autoplayHoverPause: false,
                         dots: $sliderCarouseDots,
                         video: $sliderCarouseVideo,
                         responsive: {
@@ -532,7 +532,7 @@ var INSPIRO = {};
                 setTimeout(function () {
                     $postCarousel.owlCarousel({
                         autoplay: true,
-                        autoplayHoverPause: true,
+                        autoplayHoverPause: false,
                         dots: true,
                         mouseDrag: false,
                         touchDrag: false,
@@ -554,7 +554,7 @@ var INSPIRO = {};
                               '<i class="fa fa-arrow-right icon-white"></i>'],
                     autoplay: true,
                     dots: false,
-                    autoplayHoverPause: true,
+                    autoplayHoverPause: false,
                     navigation: true,
                     items: 1,
                     animateOut: 'fadeOut'
@@ -596,7 +596,7 @@ var INSPIRO = {};
             $('.news-ticker-content').each(function () {
                 $('.news-ticker-content').owlCarousel({
                     autoplay: true,
-                    autoplayHoverPause: true,
+                    autoplayHoverPause: false,
                     dots: false,
                     mouseDrag: true,
                     touchDrag: true,
@@ -669,7 +669,7 @@ var INSPIRO = {};
                                '<i class="fa fa-arrow-right icon-white"></i>'],
                          autoplay: $sliderCarouseAutoPlay,
                          autoplayTimeout: 3000,
-                         autoplayHoverPause: true,
+                         autoplayHoverPause: false,
                          dots: $sliderCarouseDots,
                          items: 1,
                          autoHeight: false,
