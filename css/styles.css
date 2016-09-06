@@ -137,3 +137,35 @@
 .categories-list a:hover {
   color: #8686E8;
 }
+
+.categories {
+  
+}
+
+.category-list li {
+  display: inline;
+  margin-top: 2% !important;
+  margin-bottom: 2% !important;
+}
+
+.categories a {
+  font-size: 1.5em;
+  color: #4A4A4A;
+}
+
+.categories a:hover {
+  color: #8686E8;
+}
+
+.categories h2 {
+  font-size: 4em;
+}
+
+.category-date {
+  float: right;
+  font-size: 1.5em;
+}
+
+.title-archive {
+  font-size: 5em;
+}

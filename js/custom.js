@@ -63,7 +63,7 @@ $(function () { // wait for document ready
       dataType: 'json',
       beforeSend: function() {
         //$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-        $submit.attr('disabled', true).val('Enviando message…');
+        $submit.attr('disabled', true).val('Enviando mensaje…');
       },
       success: function(data) {
         //$contactForm.append('<div class="alert alert--success">Message sent!</div>');
