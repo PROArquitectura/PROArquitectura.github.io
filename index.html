@@ -262,13 +262,14 @@
 		<!-- CONTACTO -->
 		<section id="section5" class="contact-form background-overlay-dark parallax fullscreen" data-stellar-background-ratio="0.1" style="min-height: 100vh; background-image: url(images/landing/contacto_fondo.jpg); background-position: 50% 25px;">
 			<!-- <img id="fondo" class="back-sect1-active back-sect1  img-responsive" src="images/landing/contacto_fondo.jpg"/> -->
+			<!-- action="https://formspree.io/juseve200@gmail.com"  -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
 							<div class="heading text-medium-light">
 								CONTACTO
 							</div>
-							<form action="https://formspree.io/juseve200@gmail.com" method="POST">
+							<form  id="contactform" action="//formspree.io/juseve200@gmail.com" method="POST">
 								<div class="form-group">
 	    						<input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
 	  						</div>
@@ -281,13 +282,30 @@
 	  						<div class="form-group">
 	    						<input type="text" class="form-control" id="_subject" placeholder="Asunto" name="asunto">
 	  						</div>
-	  						<input type="hidden" name="_next" value="//proarquitectura.co" />
+	  						<!-- <input type="hidden" name="_next" value="//proarquitectura.co" /> -->
 	  						<div class="form-group">
 	    						<textarea name="comentarios" id="comentarios" placeholder="Comentarios" class="form-control"></textarea>
 	  						</div>
 	  						<input type="submit" value="Enviar" class="btn">
+	  						<!-- <button id="sendMessage" class="btn">Enviar</button> -->
 							</form>
 					</div>
+					<script>
+
+						// var message = "";
+
+						// $("#sendMessage").on("click", function() {
+						//     message = $("#contactform").serializeArray().map(function(x){data[x.name] = x.value;});
+						//     $.ajax({
+						//         url: "//formspree.io/juseve200@gmail.com", 
+						//         method: "POST",
+						//         data: {message: message},
+						//         dataType: "json"
+						//     });
+						//     alert('Thanks for the email, we\'ll be in touch promptly.');
+						//     return false;
+						// });
+					</script>
 					<div class="col-md-6">
 						<div class="heading text-medium-light">
 							&thinsp;
