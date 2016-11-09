@@ -203,3 +203,42 @@ section h2 {
   /*height: 100vh;*/
 }
 
+.info-apto {
+  background-color: #272936!important;
+  border: solid orange 2px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.info-apto * {
+  color: white;
+}
+
+.info-apto .separator {
+  border: none;
+  color: orange;
+  background-color: orange;
+  height: 2px;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.info-apto .info-torre, .dimensiones, .caracteristicas-apto, .caracteristicas-torre {
+  margin-left: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.caracteristicas-apto > h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.caracteristicas-torre * {
+  color: orange;
+}
+
+
+
